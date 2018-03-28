@@ -1,0 +1,16 @@
+<body> 
+<a id="ex1.html" href="#">ex1</a>
+<a id="ex2.html" href="#">ex2</a>
+<script>
+$(document).ready(function () {
+    $(page1Link).bind("click", function () {
+        $(page1).show();
+        $(page2).hide();
+    });
+    $(page2Link).bind("click", function () {
+        $(page1).hide();
+        $(page2).show();
+    });
+});
+</script>
+</body>
